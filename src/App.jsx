@@ -5,14 +5,16 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import AboutUs from './components/About'
 import AboutUsPage from './components/InsideAbout'
+import Home from './components/Home'
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<AboutUs />} />
-        <Route path="/about" element={<AboutUsPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/learnmore" element={<AboutUsPage />} />
       </Routes>
     </BrowserRouter>
   )

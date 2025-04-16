@@ -9,7 +9,7 @@ import {
 export default function Footer() {
 
     return (
-        <footer className="bg-gray-900 text-white pt-12 pb-6 mt-5 rounded-lg">
+        <footer className="bg-gray-900 text-white pt-12 pb-6 mt-5  lg:w-full">
             <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-5 gap-10 text-left lg:text-xl text-md">
                 <div className="col-span-1 lg:col-span-1">
                     <h3 className="font-semibold mb-2 text-lg">About KOYYA</h3>
@@ -65,7 +65,7 @@ export default function Footer() {
             </div>
 
             <div className="border-t border-gray-700 mt-10 pt-4 text-center text-xs text-gray-400">
-                © 2023 KOYYA. All rights reserved.
+                © 2025 KOYYA. All rights reserved.
             </div>
         </footer>
     );
