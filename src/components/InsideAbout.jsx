@@ -1,0 +1,152 @@
+import React from "react";
+import { TiTick } from "react-icons/ti";
+import { FaComputer } from "react-icons/fa6";
+import { MdComputer } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa6";
+import { MdCheckCircle, MdTrackChanges } from "react-icons/md";
+import Footer from "./Footer";
+import { Link } from "react-router-dom";
+function AboutUsPage() {
+    const teamMembers = [
+        { name: "Krishna Mohan Koyya", role: "CEO", img: "src/assets/Screenshot 2025-04-15 213153.png" },
+        { name: "Maya Mathy", role: "Founder", img: "src/assets/team1.jpg" },
+        { name: "Alexis Jensen", role: "CTO", img: "src/assets/team2.jpg" },
+        { name: "Keira Battye", role: "Product Designer", img: "" },
+        { name: "Dominic Game", role: "3D Artist", img: "" },
+        { name: "James Vial", role: "Head of Front-End", img: "" }
+    ]
+    return (
+        <div className="text-gray-800 font-sans ml-9 mr-9">
+            <header className=" h-[400px] bg-cover bg-center flex items-center justify-center " style={{ backgroundImage: `url(${"src/assets/team2.jpg"})`, opacity: 0.6 }}>
+                <div className=" p-6 rounded-md">
+                    <h1 className="text-black relative  text-5xl font-bold">About us</h1>
+                    <p className="text-black relative  text-xl mt-2">Home → About</p>
+                    <button className="bg-blue-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-700 mt-4">
+                        <Link to='/'>Back</Link>
+                    </button>
+                </div>
+            </header>
+
+            <section className="grid lg:grid-cols-4 gap-8 p-10 space-x-4 ">
+                <div className="col-span-2 grid grid-cols-2 gap-4 overflow-hidden">
+                    <img src={"src/assets/team1.jpg"} className="rounded-lg " />
+                    <div>
+                        <img src={"src/assets/team2.jpg"} className="rounded-lg " />
+                        <div className="col-span-2 grid grid-cols-2 gap-4 space-y-8 mt-5 lg:mt-14 py-9 ">
+                            <img src={"src/assets/team3.jpg"} className="rounded-lg " />
+                            <div className="bg-blue-600 text-white text-center flex items-center justify-center lg:text-xl  text-sm font-semibold rounded-lg ">25+<br />Years of Experience</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div className="col-span-2 bg-blue-100 p-6 rounded-lg h-[510px] w-[610px] space-y-7">
+                    <h3 className="text-blue-800 font-serif mb-2 text-left text-3xl mt-7">ABOUT KOYYA</h3>
+                    <h2 className=" font-mono text-400 mb-4 text-left text-4xl">Digitally rooted.<br /> Naturally driven.That’s<br /> the Koyya way.</h2>
+                    <p className="mb-4 font-sans text-lg text-justify">Koyya is a dual-vertical company bridging Technology and AgriBusiness, delivering innovative digital solutions and empowering agricultural brands through modern tech and marketing.</p>
+                    <ul className="list-disc list-inside space-y-2 text-left">
+                        <li className="flex items-center"><MdCheckCircle color="blue" size={"25"} /> &nbsp; Bridging Technology & AgriBusiness</li>
+                        <li className="flex items-center"><MdCheckCircle color="blue" size={"25"} /> &nbsp; Building web, mobile & IoT products</li>
+                        <li className="flex items-center"><MdCheckCircle color="blue" size={"25"} /> &nbsp; Offering consulting & upskilling services</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section className="p-12 bg-gray-50 text-left w-full overflow-hidden">
+                <h2 className="text-4xl font-bold mb-4 w-1/2 text-blue-600 text-left">Empowering Progress: Bridging Agriculture and Technology for a Better Tomorrow</h2>
+
+                <div className="grid lg:grid-cols-2 gap-20">
+                    <div className="space-y-6 ">
+                        <p className="text-lg mb-8 text-gray-600 max-w-2xl">Bridging agriculture and technology to create impactful, sustainable solutions that shape a brighter tomorrow.</p>
+                        <div className="bg-blue-50 p-3 rounded-lg shadow mr-12 ">
+                            <h3 className="text-blue-700 font-semibold mb-2 text-2xl">Mission</h3>
+                            <p className="flex items-center"><MdTrackChanges size={"75"} /> Our mission is to leverage cutting-edge technologies to solve real-world problems, focusing on technology and agriculture to create meaningful impact and value.</p>
+                        </div>
+                        <div className="bg-blue-50 p-3 rounded-lg shadow ml-12">
+                            <h3 className="text-blue-700 font-semibold mb-2 text-2xl">Vision</h3>
+                            <p><MdComputer />To be a leading force in bridging the gap between agribusiness and technology, creating a future where digital innovation uplifts rural roots and modern enterprises alike.</p>
+                        </div>
+                        <div className="bg-blue-50 p-3 rounded-lg shadow mr-12">
+                            <h3 className="text-blue-700 font-semibold mb-2 text-2xl">Core Values</h3>
+
+                            <ul className="list-disc list-inside grid-cols-3 grid text-left">
+                                <li>
+                                    Innovation
+                                </li>
+                                <li>Integrity </li>
+                                <li>Sustainability </li>
+                            </ul>
+                            <ul className="list-disc list-inside grid-cols-3 grid text-left">
+                                <li>Excellence </li>
+                                <li>Collaboration</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <img src={"src/assets/team4.jpg"} className="rounded-lg w-2/4 h-[570px] ml-11 " />
+                </div>
+            </section>
+
+            <section className="p-12 w-full overflow-hidden">
+                <div className="p-12 bg-blue-200 h-4 -z-10 mt-20 -m-52 ">
+                </div>
+                <div className="flex flex-col lg:flex-row items-center gap-8 ">
+                    <img src={"src/assets/team5.jpg"} className=" p-6 lg:w-1/3 rounded-lg" />
+
+                    <div className=" px-6 py-8 rounded-md w-full lg:w-1/2">
+                        <h2 className="text-6xl font-bold text-blue-800 mb-2 ">Behind the KOYYA</h2>
+                        <div className="space-y-10">
+                            <p className="text-xl text-gray-800 ">Rooted in Legacy. Growing with Innovation.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section className="p-12 bg-violet-100 w-full overflow-hidden rounded-lg">
+                <h2 className="text-2xl font-bold mb-4 ">Our Story</h2>
+                <p className="text-gray-700  text-justify ml-7">
+                    <strong>Koyya Enterprises Private Limited (KEPL)</strong> was born from the vision of <strong>Krishna Mohan Koyya</strong> and <strong>Karuna Koyya</strong>  a family-driven initiative to merge deep industry experience with purpose-driven innovation.
+                    What began as <strong>Glarimy Technology Services</strong> in 2010 a trusted name in tech upskilling and consulting  evolved in 2023 into a broader mission: to build meaningful, scalable solutions in technology and agriculture.
+                    Founded by Krishna and Sriram Koyya, Koyya Enterprises blends over two decades of technical expertise with a fresh perspective on agribusiness, aiming to deliver impact across industries and communities.
+                </p>
+            </section>
+
+            <section className="p-12 grid lg:grid-cols-2 gap-8">
+                <div className="bg-blue-100 p-6 rounded-l-full overflow-hidden">
+                    <h3 className="font-bold text-xl mb-2">Glarimy – The Spirit of Innovation</h3>
+                    <p className="italic">Curious | Creative | Tech-savvy</p>
+                    <p className="mt-4">Glarimy symbolizes our technology vertical — a young, agile, and curious mind constantly exploring new possibilities. She represents our approach to solving modern business problems through SaaS, mobile apps, consulting, and upskilling programs. Her energy drives digital transformation across enterprises.</p>
+                </div>
+                <div className="bg-green-100 p-6 rounded-r-full overflow-hidden">
+                    <h3 className="font-bold text-xl mb-2">Krissaco – The Heart of Agriculture</h3>
+                    <p className="italic">Grounded | Visionary | Future-Ready</p>
+                    <p className="mt-4">Krissaco stands for the modern agriculturist — rooted in tradition, yet empowered by technology. He leads our agribusiness initiatives with a focus on IoT, AI, cloud-based tools, and food product innovation. His mission is to add value to agriculture through sustainable, tech-driven solutions.</p>
+                </div>
+            </section>
+
+            <section className="p-12 bg-blue-50 mb-6 rounded-lg">
+                <h2 className="text-2xl font-bold mb-8 text-center">Meet our team members</h2>
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 p-12">
+                    {teamMembers.map((member, i) => (
+                        <div key={i} className=" bg-white rounded-lg shadow p-2 flex flex-row text-left space-x-4">
+                            <img src={member.img} className="w-36 h-36 rounded-lg float-start " />
+                            <div>
+                                <h3 className="font-bold mt-4 ">{member.name}</h3>
+                                <p className="text-blue-600 text-sm">{member.role}</p>
+
+                                <div className="flex space-x-4 mt-4">
+                                    <a href="#"><FaFacebook /></a>
+                                    <a href="#"><FaGithub /></a>
+                                    <a href="#"><FaLinkedin /></a>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+            <Footer />
+
+        </div>
+    );
+};
+
+export default AboutUsPage;
