@@ -1,58 +1,77 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
+
 function AboutUs() {
     return (
-        <div className="bg-gray-50 w-screen h-full m-0">
-            <h2 className="text-6xl font-bold text-gray-900 mb-4 mt-14">About us</h2>
-            <section className="flex flex-col lg:flex-row justify-between items-center py-16 px-4 text-xl mr-32">
+        <div className="bg-gray-50 w-full px-4 sm:px-8 lg:px-16 py-10">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-10 text-center">About Us</h2>
+
+            <section className="flex flex-col lg:flex-row justify-between items-center gap-12 lg:gap-24">
+                {/* Image Section */}
                 <div className="w-full lg:w-1/2 flex justify-center">
                     <img
                         src={"src/assets/Screenshot 2025-04-15 213606.png"}
                         alt="Team illustration"
-                        className="rounded-xl w-[500px] h-[400px] object-contain"
+                        className="rounded-xl w-full max-w-sm lg:max-w-[500px] lg:h-[400px] object-contain"
                     />
                 </div>
 
-                <div className="w-full lg:w-1/2 mt-10 lg:mt-0 lg:pl-10 ">
-                    <div className="flex flex-wrap gap-6 text-center mb-6 items-center py-3">
+                {/* Content Section */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
                         <div>
                             <p className="text-blue-700 font-semibold text-xl">50+</p>
                             <p className="text-gray-600 text-sm">Employees</p>
                         </div>
                         <div>
                             <p className="text-blue-700 font-semibold text-xl">5 Years +</p>
-                            <p className="text-gray-600 text-sm">Experiences</p>
+                            <p className="text-gray-600 text-sm">Experience</p>
                         </div>
                         <div>
-                            <p className="text-blue-700 font-semibold text-xl">100 +</p>
+                            <p className="text-blue-700 font-semibold text-xl">100+</p>
                             <p className="text-gray-600 text-sm">Smiles</p>
                         </div>
-                        <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow-sm hover:bg-purple-200">
-                            <Link to="/about">learn More</Link>
-                        </button>
-                    </div>
-                    <p className="italic text-gray-700 mb-6 text-justify">
-                        Koyya Enterprises Private Limited (KEPL), headquartered in Bengaluru, operates across two key sectors:
-                        Technology and Agriculture. The company is structured into two distinct verticals Glarimy Business Unit
-                        and Krissaco Business Unit each with a clear focus and purpose.Glarimy Business Unit
-                    </p>
-                    <p className="italic text-gray-700 font-semibold"></p>
 
-                    <div className="flex items-center gap-4 mt-14">
+                        <div className="hidden lg:block ">
+                            <Link to="/about">
+                                <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow-sm hover:bg-purple-200 mt-4 lg:mt-0">
+                                    Learn More
+                                </button>
+                            </Link>
+                        </div>
+
+                    </div>
+                    <div className="block lg:hidden mb-6">
+                        <Link to="/about">
+                            <button className="bg-purple-100 text-purple-800 px-4 py-2 rounded-md shadow-sm hover:bg-purple-200 mt-4 lg:mt-0">
+                                Learn More
+                            </button>
+                        </Link>
+                    </div>
+                    <p className="italic text-gray-700 lg:mb-6 text-justify lg:mr-4 lg:ml-0 mr-10 ml-10">
+                        Koyya Enterprises Private Limited (KEPL), headquartered in Bengaluru, operates across two key sectors:
+                        Technology and Agriculture. The company is structured into two distinct verticals: Glarimy Business Unit
+                        and Krissaco Business Unit, each with a clear focus and purpose.
+                    </p>
+
+                    {/* Founder Info */}
+                    <div className="flex items-center gap-4 m-10">
                         <img
                             src={"src/assets/Screenshot 2025-04-15 213153.png"}
                             alt="Krishna Mohan Koyya"
-                            className="rounded-full w-[100px] h-[100px] object-cover shadow-lg shadow-gray-300"
+                            className="rounded-full w-[80px] h-[80px] object-cover shadow-lg shadow-gray-300"
                         />
                         <div>
                             <p className="text-lg font-serif">Krishna Mohan Koyya</p>
-                            <p className="text-sm text-gray-700">Krishna Mohan Koyya . CEO</p>
+                            <p className="text-sm text-gray-700">CEO, Krishna Mohan Koyya</p>
                         </div>
                     </div>
                 </div>
             </section>
+            <Footer />
         </div>
     );
-};
+}
 
 export default AboutUs;

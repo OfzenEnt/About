@@ -7,9 +7,10 @@ import {
 } from 'react-icons/fa';
 
 export default function Footer() {
+
     return (
         <footer className="bg-gray-900 text-white pt-12 pb-6 mt-5 rounded-lg">
-            <div className="max-w-7xl mx-auto px-4 grid sm:grid-cols-2 lg:grid-cols-5 gap-10 text-left">
+            <div className="max-w-7xl mx-auto px-4 grid grid-cols-2 lg:grid-cols-5 gap-10 text-left lg:text-xl text-md">
                 <div className="col-span-1 lg:col-span-1">
                     <h3 className="font-semibold mb-2 text-lg">About KOYYA</h3>
                     <p className="text-sm leading-relaxed">
@@ -25,33 +26,33 @@ export default function Footer() {
 
                 <div>
                     <h3 className="font-semibold mb-2 text-lg">Quick Links</h3>
-                    <ul className="text-sm space-y-1">
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Services</li>
-                        <li>Careers</li>
+                    <ul className="text-sm space-y-1 ">
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Home</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>About Us</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Services</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Careers</li>
                     </ul>
                 </div>
 
                 <div>
                     <h3 className="font-semibold mb-2 text-lg">Technology Services</h3>
                     <ul className="text-sm space-y-1">
-                        <li>Web Development</li>
-                        <li>Mobile Apps</li>
-                        <li>IoT Solutions</li>
-                        <li>Tech Consulting</li>
-                        <li>Upskilling Programs</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Web Development</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Mobile Apps</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>IoT Solutions</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Tech Consulting</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Upskilling Programs</li>
                     </ul>
                 </div>
 
                 <div>
                     <h3 className="font-semibold mb-2 text-lg">AgriBusiness</h3>
                     <ul className="text-sm space-y-1">
-                        <li>Coffee Products</li>
-                        <li>Packaging Solutions</li>
-                        <li>Agri I-Commerce</li>
-                        <li>Farmer Branding</li>
-                        <li>Web Presence Setup</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Coffee Products</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Packaging Solutions</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Agri I-Commerce</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Farmer Branding</li>
+                        <li className='opacity-70 hover:opacity-90 hover:underline'>Web Presence Setup</li>
                     </ul>
                 </div>
 
