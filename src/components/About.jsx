@@ -2,8 +2,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import NavBar from "./NavBar";
+import CountUp from 'react-countup';
 
 function AboutUs() {
+    const NumberCounter = ({ endValue }) => {
+        return (
+            <div >
+                <CountUp
+                    start={0}
+                    end={endValue}
+                    duration={2} // duration in seconds
+                    separator=","
+                    suffix=" "
+                    leadingZeros={false}
+                    className="text-2xl font-semibold text-center text-blue-700"
+                />
+            </div>
+        );
+    };
     return (
         <>
             <NavBar />
@@ -24,16 +40,16 @@ function AboutUs() {
                     <div className="w-full lg:w-1/2 flex flex-col justify-center mt-4">
                         <div className="flex flex-wrap gap-6 justify-center lg:justify-start text-center lg:mb-6 items-center py-3">
                             <div>
-                                <p className="text-blue-700 font-semibold text-xl md:text-2xl">50+</p>
+                                <div><p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center"><NumberCounter endValue={50} /> +</p></div>
                                 <p className="text-gray-600 text-sm md:text-base">Employees</p>
                             </div>
                             <div>
-                                <p className="text-blue-700 font-semibold text-xl md:text-2xl">5 Years +</p>
-                                <p className="text-gray-600 text-sm md:text-base">Experience</p>
+                                <div><p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center"><NumberCounter endValue={25} /> +</p></div>
+                                <p className="text-gray-600 text-sm md:text-base ">Years Experience</p>
                             </div>
                             <div>
-                                <p className="text-blue-700 font-semibold text-xl md:text-2xl">100+</p>
-                                <p className="text-gray-600 text-sm md:text-base">Smiles</p>
+                                <div><p className="text-blue-700 font-semibold text-xl md:text-2xl flex items-center justify-center"><NumberCounter endValue={100} /> +</p></div>
+                                <p className="text-gray-600 text-sm md:text-base"> Smiles</p>
                             </div>
 
                             <div className="hidden lg:block">
@@ -63,7 +79,7 @@ function AboutUs() {
                             <img
                                 src={"/krishna.png"}
                                 alt="Krishna Mohan Koyya"
-                                className="rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] object-cover shadow-lg shadow-blue-100 border-2 border-white"
+                                className="rounded-full w-[80px] h-[80px] md:w-[120px] md:h-[120px] lg:h-[100px] lg:w-[100px] object-cover shadow-lg shadow-blue-100 border-4  border-white"
                             />
                             <div>
                                 <p className="text-lg md:text-xl font-serif">Krishna Mohan Koyya</p>

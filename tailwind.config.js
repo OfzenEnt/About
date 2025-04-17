@@ -5,7 +5,19 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens:
+      {
+        'tab':'710px',
+        'ipad':'810px',
+      },
+      scale:
+      {
+        '102': '1.02',
+        '104': '1.04',
+        
+      },
+    },
   },
   plugins: [],
 }
