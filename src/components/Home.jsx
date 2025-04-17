@@ -26,7 +26,7 @@ export default function Home() {
                 {/* Image Section */}
                 <div className="md:w-1/2">
                     <img
-                        src={"src/assets/Screenshot 2025-04-15 213606.png"}
+                        src={"/ai3person.png"}
                         alt="Homepage Visual"
                         className=" shadow-lg max-w-[45%] h-96 rounded-ss-[200px] border-2 border-black"
                     />
